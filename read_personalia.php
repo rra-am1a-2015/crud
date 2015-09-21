@@ -27,10 +27,37 @@
 
 	$fruit = array("peer", "appel", "mandarijn");
 	
-	echo "Het gezondst is, in aflopende volgorde: ".$fruit[2].", ".$fruit[1].", ".$fruit[0];
+	echo "Het gezondst is, in aflopende volgorde: ".$fruit[2].", ".$fruit[1].", ".$fruit[0]."<br>";
 	
 	// Opdracht: maak een array auto, sla daarin 5 automerken op en geef deze weer in een
 	// orderered list <ol><li></li></ol>. Lievelingsmerk bovenaan...
+	
+	// Geindexeerde array
+	$auto = array("Mercedes", "Fiat", "Bentley", "Bugatti", "Ford");
+	
+	echo "Mijn favoriete auto's zijn:<br>
+		  <ol>
+			<li>".$auto[0]."</li>
+			<li>".$auto[1]."</li>
+			<li>".$auto[2]."</li>
+			<li>".$auto[3]."</li>
+			<li>".$auto[4]."</li>
+		  </ol>";
+	
+	// Associatieve array
+	// Maak een array met gametitel, gamegenre, jaaruitgifte, uitgever ,cijfer en geef deze weer in een <ol>
+	
+	$games = array("gametitel" => "Kings Valley I", "Doolhof", 1981, "konami", 10);
+	
+	echo "Hieronder staan de gegevens van mijn favo game ever...<br>";
+	echo "<ol>
+			<li>".$games["gametitel"]."</li>
+			<li>".$games[0]."</li>
+			<li>".$games[1]."</li>
+			<li>".$games[2]."</li>
+			<li>".$games[3]."</li>
+		  </ol>";
+	
 	
 	
 	
