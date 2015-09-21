@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<style>
+table, td
+{
+	border: 0px solid black;
+	border-collapse:collapse;
+	padding: 5px;
+}
+
+body, input
+{
+	font-family:"Comic Sans MS";
+	font-size:14px;
+}
+
+input
+{
+	width:500px;
+}
+
+
+
+</style>
+<html>
+	<head>
+		<title>registratieformulier1</title>
+		
+	</head>
+	<body>
+		<h3>Registratieformulier</h3>
+		
+		<form action="registratie3.php" method="post">
+			<table>
+				<tr>
+					<td>Voornaam:</td>
+					<td><input type="text"
+							   name="voornaam"
+							   placeholder="type uw voornaam">
+					</td>
+				</tr>
+				<tr>
+					<td>Tussenvoegsel:</td>
+					<td><input type="text"
+							   name="tussenvoegsel"
+							   placeholder="type uw tussenvoegsel"></td>
+				</tr>
+				<tr>
+					<td>Achternaam:</td>
+					<td><input type="text"
+							   name="achternaam"
+							   placeholder="type uw achternaam"></td>
+				</tr>
+				<tr>
+					<td>e-mailadres:</td>
+					<td><input type="email"
+							   name="e-mail"
+							   placeholder="type uw emailadres"></td>
+				</tr>
+				<tr>
+					<td>wachtwoord</td>
+					<td><input type="password"
+							   name="wachtwoord"
+							   placeholder="type uw wachtwoord"></td>			
+				</tr>
+				<tr>
+					<td>leeftijd</td>
+					<td><input type="number"
+							   name="leeftijd" min="0" max="125"
+							   placeholder="type uw leeftijd(getal tussen 0-125 jaar)"></td>			
+				</tr>	
+				<tr>
+					<td>geboortedatum</td>
+					<td><input type="date"
+							   name="geboortedatum"
+							   placeholder="type uw geboortedatum"></td>			
+				</tr>	
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Klik op mij!"></td>
+				</tr>
+				
+			</table>
+		</form>	
+	</body>
+</html>
