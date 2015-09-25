@@ -16,7 +16,28 @@
 	// Studenten verteld over bestaan github.com.
 	//var_dump($result);
 	
-	$row = mysqli_fetch_array($result);
+	while( $row = mysqli_fetch_assoc($result) )
+	{
+		echo $row["id"]." | ".
+			 $row["voornaam"]." | ".
+			 $row["tussenvoegsel"]." | ".
+			 $row["achternaam"]." | ".
+			 $row["email"]." | ".
+			 $row["haarkleur"]."<br>";			
+	}
+	
+	/*
+	$i = 0;
+	
+	while ( $i <= 10)
+	{
+		echo $i."<br>";
+		//$i = $i + 1;
+		//$i++;
+		$i += 1;
+	}
+	
+	//var_dump($row);
 	
 	// Wat is een array
 	$fruit1 = "appel";
@@ -47,17 +68,21 @@
 	// Associatieve array
 	// Maak een array met gametitel, gamegenre, jaaruitgifte, uitgever ,cijfer en geef deze weer in een <ol>
 	
-	$games = array("gametitel" => "Kings Valley I", "Doolhof", 1981, "konami", 10);
+	$games = array("gametitel" 		=> "Kings Valley I",
+				   "gamegenre" 		=> "Doolhof",
+				   "jaaruitgifte"   => 1985,
+				   "uitgever"		=> "konami",
+				   "cijfer"			=> 10);
 	
 	echo "Hieronder staan de gegevens van mijn favo game ever...<br>";
 	echo "<ol>
 			<li>".$games["gametitel"]."</li>
-			<li>".$games[0]."</li>
-			<li>".$games[1]."</li>
-			<li>".$games[2]."</li>
-			<li>".$games[3]."</li>
+			<li>".$games["gamegenre"]."</li>
+			<li>".$games["jaaruitgifte"]."</li>
+			<li>".$games["uitgever"]."</li>
+			<li>".$games["cijfer"]."</li>
 		  </ol>";
-	
+	*/
 	
 	
 	
