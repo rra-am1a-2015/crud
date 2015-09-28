@@ -60,8 +60,8 @@
 // http://www.w3schools.com/php/php_mysql_connect.asp theorie mysqli
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "am1a_inlogregistratie";
+$password = "am1a_inlogregistratie";
+$dbname = "";
 
 // Maak contact met de mysql-server en de database.....
 $conn = mysqli_connect($servername, $username, $password, $dbname)or die("Database server verbindingsfout. De server meldt: ".mysqli_error($conn));
@@ -80,4 +80,7 @@ $query = "INSERT INTO `personalia` (`id`,
 mysqli_query($conn, $query) or die("Query fout in de volgende query: ".$query."<br>De database meldt het volgende: ".mysqli_error($conn));
 
 mysqli_close($conn);
+
+echo "Uw ingevulde gegevens zijn correct ontvangen. Dank u voor het registreren";
+header("refresh:4; url=index.html");
 ?>

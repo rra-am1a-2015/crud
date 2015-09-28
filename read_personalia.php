@@ -18,11 +18,32 @@
 
 <!DOCTYPE html>
 <style>
+html
+{
+	font-family:Verdana;
+	font-size:12px;
+}
 table, th, td
 {
 	border:1px solid orange;
-	padding:7px;
+	padding:17px;
 	border-collapse:collapse;
+}
+th
+{
+	background-color:RGB(200, 200, 200);
+	color:white;
+	//border-radius:40px;
+}
+table, td
+{
+	//border-radius:40px;
+	//-moz-border-radius:20px;
+	background-color:orange;
+}
+td
+{
+	background-color:white;
 }
 </style>
 <html>
@@ -30,7 +51,9 @@ table, th, td
 		<title></title>
 	</head>
 	<body>
+	<h3>Gegevens opgevraagd uit de tabel personalia</h3>
 		<table>
+			<caption>Personalia Tabel</caption>
 			<tr>
 				<th>id</th>
 				<th>voornaam</th>
@@ -53,5 +76,7 @@ table, th, td
 			}		
 		?>
 		</table>
+		<br>
+		<a href="index.html">terug naar index</a>
 	</body>
 </html>
