@@ -61,6 +61,7 @@ td
 				<th>achternaam</th>
 				<th>email</th>
 				<th>haarkleur</th>
+				<th></th>
 			</tr>
 		<?php
 			while( $row = mysqli_fetch_assoc($result) )
@@ -72,6 +73,11 @@ td
 						<td>".$row["achternaam"]."</td>
 						<td>".$row["email"]."</td>
 						<td>".$row["haarkleur"]."</td>
+						<td>
+							<a href='update_personalia.php?id=".$row["id"]."'>
+								<img src='icons/edit.png' alt='edit icon'>
+							</a>
+						</td>
 					  </tr>";
 			}		
 		?>
