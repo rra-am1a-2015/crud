@@ -1,6 +1,5 @@
 <?php
-	echo "Hallo: ";
-	var_dump($_POST);
+	//var_dump($_POST);
 	
 	include_once("db_connect.php");
 	
@@ -13,4 +12,7 @@
 			  WHERE  `id` 				= ".$_POST['id'].";";
 			  
 	mysqli_query($connection, $query) or die("Query-fout: ".mysqli_error());
+	
+	echo "U wijzigingen zijn doorgevoerd. U wordt doorgestuurd naar de overzichtstabel.";
+	header("refresh: 5; url=read_personalia.php");
 ?> 

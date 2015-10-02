@@ -11,7 +11,7 @@
 	
 	$record = mysqli_fetch_assoc($result);
 	
-	var_dump($record);
+	//var_dump($record);
 ?>
 
 
@@ -21,6 +21,7 @@
 		<title></title>
 	</head>
 	<body>
+	<h3>U kunt de onderstaande gegevens wijzigen.</h3>
 		<form action="do_update_personalia.php" method="post">
 			<input type="hidden" name="id" value="<?php echo $record["id"]; ?>">
 			<table>
