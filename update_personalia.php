@@ -22,6 +22,7 @@
 	</head>
 	<body>
 		<form action="do_update_personalia.php" method="post">
+			<input type="hidden" name="id" value="<?php echo $record["id"]; ?>">
 			<table>
 				<tr>
 					<td>voornaam:</td>

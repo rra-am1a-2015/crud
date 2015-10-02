@@ -7,10 +7,10 @@
 	$query = "UPDATE `personalia` 
 			  SET 	 `voornaam` 		= '".$_POST['voornaam']."',
 					 `tussenvoegsel` 	= '".$_POST['tussenvoegsel']."',
-					 `achternaam` 		= 'Rutein',
-					 `email` 			= 'rutein@gmail.com',
-					 `haarkleur` 		= 'geel'
-			  WHERE  `id` 				= 1;";
+					 `achternaam` 		= '".$_POST['achternaam']."',
+					 `email` 			= '".$_POST['email']."',
+					 `haarkleur` 		= '".$_POST['haarkleur']."'
+			  WHERE  `id` 				= ".$_POST['id'].";";
 			  
 	mysqli_query($connection, $query) or die("Query-fout: ".mysqli_error());
-?>
+?> 
