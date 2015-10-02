@@ -21,7 +21,7 @@
 		<title></title>
 	</head>
 	<body>
-		<form action="update_personalia.php" method="post">
+		<form action="do_update_personalia.php" method="post">
 			<table>
 				<tr>
 					<td>voornaam:</td>
