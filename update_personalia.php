@@ -56,9 +56,15 @@
 				</tr>
 				<tr>
 					<td>haarkleur:</td>
-					<td><input type="text"
-							   name="haarkleur"
-							   value="<?php echo $record["haarkleur"] ?>">
+					<td>						   
+						<select name="haarkleur">
+							<option value="default">-- geef uw haarkleur --</option>
+							<option value="blond">blond</option>
+							<option value="bruin">bruin</option>
+							<option value="zwart">zwart</option>
+							<option value="grijs">grijs</option>
+							<option value="rood">rood</option>
+						</select>
 					</td>
 				</tr>
 				<tr>

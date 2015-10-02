@@ -60,8 +60,8 @@
 // http://www.w3schools.com/php/php_mysql_connect.asp theorie mysqli
 $servername = "localhost";
 $username = "root";
-$password = "am1a_inlogregistratie";
-$dbname = "";
+$password = "";
+$dbname = "am1a_inlogregistratie";
 
 // Maak contact met de mysql-server en de database.....
 $conn = mysqli_connect($servername, $username, $password, $dbname)or die("Database server verbindingsfout. De server meldt: ".mysqli_error($conn));
