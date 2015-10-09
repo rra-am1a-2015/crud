@@ -108,6 +108,14 @@
 					</td>
 				</tr>
 				<tr>
+					<td>geboortedatum</td>
+					<td>
+						<input type="date" 
+							   name="geboortedatum"
+							   value="<?php echo $record["geboortedatum"]; ?>">
+					</td>				
+				</tr>
+				<tr>
 					<td></td>
 					<td><input type="submit"
 							   name="submit"

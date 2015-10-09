@@ -56,6 +56,8 @@ td
 				<th>achternaam</th>
 				<th>email</th>
 				<th>haarkleur</th>
+				<th>geboortedatum</th>
+				<th></th>
 				<th></th>
 			</tr>
 		<?php
@@ -68,9 +70,15 @@ td
 						<td>".$row["achternaam"]."</td>
 						<td>".$row["email"]."</td>
 						<td>".$row["haarkleur"]."</td>
+						<td>".date("d - m - Y",strtotime($row["geboortedatum"]))."</td>
 						<td>
 							<a href='update_personalia.php?id=".$row["id"]."'>
 								<img src='icons/edit.png' alt='edit icon'>
+							</a>
+						</td>
+						<td>
+							<a href='drop_record_personalia.php?id=".$row["id"]."'>
+								<img src='icons/drop.png' alt='drop icon'>
 							</a>
 						</td>
 					  </tr>";

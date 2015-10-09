@@ -70,12 +70,14 @@ $query = "INSERT INTO `personalia` (`id`,
 									`voornaam`,
 									`tussenvoegsel`,
 									`achternaam`,
-									`email`)
+									`email`,
+									`geboortedatum`)
 						VALUES 	   (NULL,
 									'".$_POST["voornaam"]."',
 									'".$_POST["tussenvoegsel"]."',
 									'".$_POST["achternaam"]."',
-									'".$_POST["e-mail"]."')";
+									'".$_POST["e-mail"]."',
+									'".$_POST["geboortedatum"]."')";
 
 mysqli_query($conn, $query) or die("Query fout in de volgende query: ".$query."<br>De database meldt het volgende: ".mysqli_error($conn));
 
